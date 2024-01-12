@@ -1,6 +1,7 @@
 import React from 'react';
 import {SafeAreaView, View, StyleSheet, TextInput, TouchableOpacity, Text} from 'react-native';
 import { CustomTitle } from './src/components/CustomTitle.tsx';
+import {SignUpForm} from "./src/pages/SignUp.tsx";
 
 function App(): React.JSX.Element {
 
@@ -11,12 +12,14 @@ function App(): React.JSX.Element {
         <>
             <SafeAreaView>
 
+                <SignUpForm />
+
                 <View style={styles.container}>
                     <CustomTitle title={title1} subtitle={'Typed text in the below Text Input'} color={'black'} fontsize={50} subcolor={'gray'} />
                 </View>
 
                 <TextInput style={{
-                    width: 300,
+                    // width: 300,
                     height: 50,
                     borderColor: 'gray',
                     borderWidth: 1,
